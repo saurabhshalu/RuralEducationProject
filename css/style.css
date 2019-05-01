@@ -1,0 +1,396 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+
+.wrapper 
+{
+    height: 130vh;
+    display: flex;
+    background-color: #468;
+    flex-direction: column;
+    margin-right: 0px;
+    background: rgb(34,34, 34);
+}
+.header
+{
+    height: 100px;
+    flex-direction: column;
+    color: white;
+    letter-spacing: 5px;
+    text-align: center;
+    flex-wrap: wrap;
+  	width: 100%;
+  	position: fixed;
+  	background: rgb(34, 34, 34);
+}
+.main {
+    flex: 1;
+    display: flex;
+    margin-right: 0px;
+}
+.leftPanel
+{
+	margin-top: 100px;
+	flex: 1;
+	display: flex;
+	background: rgb(40, 40, 40);
+	min-height: 105vh;
+}
+.rightPanel
+{
+	width: 300px;
+	background: rgb(40, 40, 40);
+	display: flex;
+	justify-content: right;
+	margin-top: 100px;
+	/*100px Margin to avoid overlap with header*/
+	margin-right: 0px;
+	
+}
+
+
+.loginContainer
+{
+	min-height: 105vh;
+	width: 300px !important;
+	background: rgb(40, 40, 40);
+	padding: 20px;
+}
+
+.registerContainer
+{
+	min-height: 105vh;
+	width: 300px !important;
+	background: rgb(40, 40, 40);
+	padding: 20px;
+	padding-bottom: 10px;
+}
+
+h2{
+	justify-content: space-between;
+}
+
+.module{
+	background-color: rgb(40, 40, 40);
+	margin-top: 0px;
+	min-height: 105vh;
+	
+}
+
+.about{
+	margin-left: 0px;
+	margin-top: 0px;
+	background-color: rgb(50, 50, 50);
+	padding: 5px;
+	min-height: 105vh;
+	color: white;
+}
+
+#a0{
+	flex:4;
+	min-width: 100px;
+	max-width: 300px;
+}
+#a1{
+	flex:4;
+	min-width: 200px;
+	width: auto;
+}
+.btn-info{
+	margin :10px;
+}
+
+
+body{
+	background-color: #ccc;
+}
+
+/*Suzen*/
+.dot {
+    height: 75px;
+    width: 75px;
+    background-color: #d7dee8;
+    border-radius: 50%;
+    display: inline-block;
+  	text-align: center;
+  	vertical-align: middle;
+  	line-height: 100%;
+
+}
+/*Suzen*/
+.loginTextbox
+{
+	border-radius: 5px;
+	background-color: #d7dee8;
+}
+
+/*Suzen*/
+#loginHeading{
+	font-family: sans-serif;
+}
+
+/* Szuen */
+
+input.signupBox
+{
+    border: 0px solid #000000;
+    border-bottom-width: 1px;
+   
+    background-color: transparent;
+}
+
+/* suzen */
+#addressField{
+	border: 2px groove !important
+	border-width: 1px;
+	border-left: 1px;
+	border-right: 1px;
+	margin-left: 3px
+}
+
+/* szuen */
+#judge{
+	color: red;
+	font-family: sans-serif;	
+}
+
+/*suzen*/
+.toandfro{
+	font-family: sans-serif;
+	color: #a2a5aa;
+}
+
+/*
+fieldset {
+    margin: 8px;
+    border: 1px solid silver;
+    padding: 8px;    
+    border-radius: 4px;
+}
+
+legend {
+    padding: 2px;    
+} */
+
+#usericon{
+	height: 57px;
+	width: 57px;
+	padding-top: 8px;
+	margin-bottom: none;
+}
+
+
+
+
+@media(max-width: 700px)
+{
+
+	.main
+	{
+		flex-direction: column;
+	}
+	.leftPanel
+	{
+		order: 1;
+		flex: 1;
+		flex-direction: column;
+		width: 100%;
+	}
+	.rightPanel
+	{
+		order: 0;
+		height: auto;
+		width: 100%;
+	}
+
+}
+
+/* suzen */
+page-review {
+
+  .rating {
+    display: flex;
+    justify-content: center;
+  }
+
+  .star {
+    // after: '\f2fc<br>\f2fc \f2fc \f2fc \f2fc';
+  }
+
+  .rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+  }
+
+  .rating > span:hover:before,
+  .rating > span:hover~span:before {
+    content: "\2605";
+    position: absolute;
+  }
+
+  .rating>span {
+    display: inline-block;
+    position: relative;
+    width: 1.1em;
+    font-size: 40px;
+    color: #F2AF01;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .review-description {
+    margin-bottom: 50px;
+  }
+}
+ p {
+    font-size: 20px;
+  }
+
+  .review-description {
+    margin-bottom: 50px;
+  }
+}
+
+/* suzen */
+.module{
+	height: 530px;
+}
+
+
+.recentsContainer{
+	height: 100%;
+	background-color: #585759;
+}
+
+
+.teach{
+	padding-top: 100px;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #ccc;
+}
+
+.detailsContainer
+{
+	text-align: center;
+	height: 105vh;
+	width: 300px !important;
+	background: rgb(50, 50, 50);
+	padding: 20px;
+	color: rgb(110, 110, 110);
+}
+
+
+.left , .middle , .right{
+	text-align: center;
+	min-width: 220px;
+	height: 105vh;
+	background-color: white;
+	display: flex;
+}
+.left{flex:1.5;}
+.middle{flex:2;}
+.right{flex:1;}
+
+/*Mahershi*/
+/*Footer Code Starts*/
+.footer{
+	height: 70px;
+	bottom: 0;
+	background: rgb(32, 32, 32); 
+	color: white;
+}
+
+.list{
+	width: 100%;
+}
+
+ul{
+	list-style-type: none;
+	text-align: center;
+}
+
+li{
+	font-size: 15px;
+	display: inline-block;
+	padding-top: 20px;
+	margin: 5px 40px;
+}
+
+li>a{
+	text-decoration: none;
+	color: white;
+}
+
+li>a:hover{
+	color: grey;
+	text-decoration: none;
+}
+
+/*Media Query for Footer*/
+@media screen and (max-width: 800px)
+{
+	li{
+		display: block;
+		font-size: 12px;
+	}
+	footer{
+		background: #ccc;
+		color: #373737
+	}
+	li>a{
+		text-decoration: none;
+		color: #373737;
+	}
+
+	li>a:hover{
+		color: grey;
+		text-decoration: none;
+	}
+}
+
+/*Footer Code Ends*/
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: aboeb4s;
+}
